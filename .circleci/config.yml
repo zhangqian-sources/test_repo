@@ -9,14 +9,14 @@ jobs:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
-      - image: cimg/base:2023.05
+      - image: ubuntu-2204:2023.04.2
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
       - run:
           name: "Say hello"
-          command: echo Hello, World! | bash -version | zip -v
+          command: echo Hello, World! | cmake -version | gcc -v
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
