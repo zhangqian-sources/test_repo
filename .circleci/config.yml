@@ -6,5 +6,4 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - run: dotnet --info
       - run: mono -V
