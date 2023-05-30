@@ -7,4 +7,4 @@ jobs:
       resource_class: windows.medium
       shell: powershell.exe -ExecutionPolicy Bypass
     steps:
-      - run: dotnet --list-sdks
+      - run: dotnet --info
