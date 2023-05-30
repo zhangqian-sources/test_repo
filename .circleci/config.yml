@@ -4,5 +4,4 @@ jobs:
       - image: cimg/base:2023.05
     steps:
       - checkout
-      - run: dotnet --info
       - run: mono -V
